@@ -1,0 +1,32 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: rgb(253, 222, 253);
+  .left {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    color: purple;
+  }
+  .nav-item {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .right {
+    background-color: purple;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    .nav-item {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+}
