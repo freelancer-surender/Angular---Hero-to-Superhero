@@ -1,0 +1,27 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  .title {
+    position: absolute;
+    left: 0px;
+    top: 200px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+  }
+  button {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+  }
+}
