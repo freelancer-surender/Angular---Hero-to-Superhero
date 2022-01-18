@@ -1,0 +1,30 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .btn-container {
+    button {
+      margin: 20px;
+      width: 300px;
+      height: 100px;
+      border-radius: 10px;
+      border: 0px;
+      outline: none;
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+      cursor: pointer;
+      &.btn-user {
+        background-color: #e91e63;
+      }
+      &.btn-product {
+        background-color: #2196f3;
+      }
+      &.btn-contact {
+        background-color: #20ac26;
+      }
+    }
+  }
+}
