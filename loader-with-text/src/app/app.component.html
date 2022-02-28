@@ -1,0 +1,5 @@
+<router-outlet *ngIf="!loading"></router-outlet>
+<div class="spinner-container" *ngIf="loading">
+  <div class="loader">Loading...</div>
+  <div class="facts" [ngClass]="{hide: isHide}">{{ fact }}</div>
+</div>
