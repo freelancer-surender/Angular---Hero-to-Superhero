@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #202020 !important;
+  width: 100vw;
+  height: 100vh;
+}
+
+@import "~bootstrap/scss/bootstrap";
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 75px);
+  .text-container {
+    font-weight: bold;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+  }
+  .btn-container {
+    margin-top: 50px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .btn {
+      width: 100px;
+      height: 40px;
+    }
+  }
+}

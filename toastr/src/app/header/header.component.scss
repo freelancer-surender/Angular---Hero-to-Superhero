@@ -1,0 +1,24 @@
+.nav {
+  width: 100vw;
+  height: 75px;
+  padding: 0px 30px;
+  display: flex;
+  background-color: darkcyan;
+  color: rgb(255, 255, 255);
+  .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    height: 75px;
+    cursor: pointer;
+    &:hover {
+      color: #202020;
+    }
+    &.active {
+      color: yellow;
+    }
+  }
+}
