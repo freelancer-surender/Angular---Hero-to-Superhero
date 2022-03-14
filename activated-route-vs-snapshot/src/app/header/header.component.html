@@ -1,0 +1,30 @@
+<div class="header">
+  <div
+    class="nav-item"
+    [ngClass]="{ active: activeTab == 'home' }"
+    (click)="goToHome()"
+  >
+    Home
+  </div>
+  <div
+    class="nav-item"
+    [ngClass]="{ active: activeTab == 'first-user' }"
+    (click)="goToFirstUser()"
+  >
+    First User
+  </div>
+  <div
+    class="nav-item"
+    [ngClass]="{ active: activeTab == 'second-user' }"
+    (click)="goToSecondUser()"
+  >
+    Second User
+  </div>
+  <div
+    class="nav-item"
+    [ngClass]="{ active: activeTab == 'third-user' }"
+    (click)="goToThirdUser()"
+  >
+    Third User
+  </div>
+</div>

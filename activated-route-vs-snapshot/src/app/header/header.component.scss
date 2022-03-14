@@ -1,0 +1,20 @@
+.header {
+  width: 100vw;
+  height: 80px;
+  background-color: #1f2833;
+  color: #66fcf1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  .nav-item {
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    &:hover {
+      color: #fff;
+    }
+    &.active {
+      color: orange;
+    }
+  }
+}
