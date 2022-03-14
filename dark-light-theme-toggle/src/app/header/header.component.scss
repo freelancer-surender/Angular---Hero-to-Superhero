@@ -1,0 +1,24 @@
+.header {
+  width: 100vw;
+  height: 80px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  .logo {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 215px;
+    .text {
+      height: 28px;
+      font-weight: bold;
+    }
+  }
+}
