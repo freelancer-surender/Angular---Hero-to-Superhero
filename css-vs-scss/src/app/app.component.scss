@@ -1,0 +1,55 @@
+.class-1 .class-2 .class-3 .class-4 {
+  color: red;
+}
+
+.class-1 .class-2 .class-3 .class-5 {
+  color: green;
+}
+
+
+.class-1 {
+  .class-2 {
+    .class-3 {
+      .class-4 {
+        color: red;
+      }
+      .class-5 {
+        color: green;
+      }
+    }
+  }
+}
+
+
+.blue-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: blue;
+}
+
+.red-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: red;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.blue-box {
+  @extend box;
+  background-color: blue;
+}
+
+.red-box {
+  @extend box;
+  background-color: red;
+}
