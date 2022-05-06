@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="btn-container">
+    <button (click)="getCountries()">Get Countries</button>
+    <button (click)="getStatus()">Get Status</button>
+  </div>
+  <div class="section" *ngIf="section === 'country'">
+    <!-- <div class="country" *ngFor="let country of countries">{{ country }}</div> -->
+    <div class="country" *ngFor="let country of countriesObs | async">{{ country }}</div>
+  </div>
+  <div class="section" *ngIf="section === 'status'">
+    <div class="status">
+      <!-- <span *ngIf="status" class="green">Online</span>
+      <span *ngIf="!status">Offline</span> -->
+      <span *ngIf="statusProm | async" class="green">Online</span>
+      <span *ngIf="!(statusProm | async)">Offline</span>
+    </div>
+  </div>
+</div>
