@@ -1,0 +1,5 @@
+<div>
+  <input #searchTxt type="text" placeholder="Search..." />
+  <button (click)="search(searchTxt)">Search</button>
+  <h1>You searched for: <span [innerHtml]="searchKey"></span></h1>
+</div>
