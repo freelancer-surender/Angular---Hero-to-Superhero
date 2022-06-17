@@ -1,0 +1,28 @@
+<div class="form-container">
+  <form [formGroup]="myForm" (submit)="addComments()">
+    <div class="form-group">
+      <label for="comments">Comment: </label>
+      <input
+        class="form-control"
+        formControlName="comment"
+        placeholder="Your comment"
+      />
+      <div
+        class="error"
+        *ngIf="myForm.get('comment')?.dirty && myForm.get('comment')?.invalid"
+      >
+        Abusive words are not allowed.
+      </div>
+      <div class="btn-container">
+        <button [disabled]="!myForm.valid" class="btn btn-info">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="comments-container" *ngIf="comments.length > 0">
+  <div class="comment" *ngFor="let comment of comments">{{ comment }}</div>
+</div>
+
+<div class="comments-container" *ngIf="comments.length === 0">
+  <div class="no-comments">No comments yet</div>
+</div>

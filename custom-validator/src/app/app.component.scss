@@ -1,0 +1,48 @@
+.form-container {
+  width: 60%;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #30475E;
+  background-color: #DDDDDD;
+  border-radius: 5px;
+  label {
+    color: #30475E;
+  }
+  input {
+    font-size: 18px;
+  }
+  .btn-container {
+    margin-top: 20px;
+    button {
+      background-color: #30475E;
+      border: 0px;
+      outline: none;
+    }
+  }
+  .error {
+    color: red;
+  }
+}
+
+.comments-container {
+  width: 60%;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #30475E;
+  background-color: #DDDDDD;
+  border-radius: 5px;
+  .no-comments {
+    color: #F05454;
+    font-size: 20px;
+    text-align: center;
+  }
+  .comment {
+    background-color: #F05454;
+    color: white;
+    border-radius: 3px;
+    padding: 10px;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}

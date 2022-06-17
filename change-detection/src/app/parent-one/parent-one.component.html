@@ -1,0 +1,10 @@
+<div class="parent-container">
+  <div class="d-flex">
+    <h2>Parent One Component</h2>
+    <button (click)="onClick()">Click</button>
+  </div>
+  <div class="d-flex">
+    <app-parent-one-child-one [myStrArr]="strArrInParent"></app-parent-one-child-one>
+    <app-parent-one-child-two></app-parent-one-child-two>
+  </div>
+</div>
