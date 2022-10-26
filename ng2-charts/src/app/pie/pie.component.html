@@ -1,0 +1,16 @@
+<div class="chart-container">
+  <div class="title">Pie chart</div>
+  <div class="nav">
+    <app-nav></app-nav>
+  </div>
+  <div class="chart-wrapper">
+    <canvas
+      baseChart
+      width="540"
+      height="360"
+      type="pie"
+      [data]="pieChartData"
+      [options]="pieChartOption"
+    ></canvas>
+  </div>
+</div>

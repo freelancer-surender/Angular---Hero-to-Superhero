@@ -1,0 +1,26 @@
+<div class="transactions">
+  <div class="title">Last few transactions</div>
+  <div class="transaction-wrapper">
+    <div class="transaction" *ngFor="let transaction of transactions">
+      <div class="image">
+        <img [src]="transaction.imgSrc" alt="" />
+      </div>
+      <div class="title">{{ transaction.title }}</div>
+      <div class="price">{{ transaction.price }}</div>
+      <div class="shop-location">
+        <div class="shop">{{ transaction.shop }}</div>
+        <div class="location">{{ transaction.location }}</div>
+      </div>
+      <div
+        class="status"
+        [ngClass]="{
+          confirmed: transaction.status === 'confirmed',
+          pending: transaction.status === 'pending',
+          shipped: transaction.status === 'shipped'
+        }"
+      >
+        {{ transaction.status }}
+      </div>
+    </div>
+  </div>
+</div>

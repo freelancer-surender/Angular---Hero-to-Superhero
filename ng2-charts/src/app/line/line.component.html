@@ -1,0 +1,15 @@
+<div class="chart-container">
+  <div class="title">Line chart</div>
+  <div class="nav">
+    <app-nav></app-nav>
+  </div>
+  <div class="chart-wrapper">
+    <canvas
+      baseChart
+      width="600"
+      height="400"
+      type="line"
+      [data]="lineChartData"
+    ></canvas>
+  </div>
+</div>

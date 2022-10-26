@@ -1,0 +1,104 @@
+<div class="login-container">
+  <div class="left">
+    <div class="logo" (click)="goToHome()">Home</div>
+    <img class="bg-pic" src="assets/login.jpg" alt="" />
+  </div>
+  <div class="right">
+    <div class="nav-tab">
+      <div
+        class="nav-item br"
+        [ngClass]="{ active: activeTab === 'login' }"
+        (click)="setActiveTab('login')"
+      >
+        Login
+      </div>
+      <div
+        class="nav-item bl"
+        [ngClass]="{ active: activeTab === 'register' }"
+        (click)="setActiveTab('register')"
+      >
+        Register
+      </div>
+    </div>
+    <div class="form-container" *ngIf="activeTab === 'login'">
+      <form>
+        <div class="form-group">
+          <div class="label">Email</div>
+          <div class="form-control">
+            <input
+              type="email"
+              [(ngModel)]="email"
+              name="email"
+              maxlength="50"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="label">Password</div>
+          <div class="form-control">
+            <input
+              type="password"
+              [(ngModel)]="password"
+              name="password"
+              maxlength="50"
+            />
+          </div>
+        </div>
+        <div>
+          <button class="loginBtn" (click)="login()">Login</button>
+        </div>
+      </form>
+    </div>
+    <div class="form-container" *ngIf="activeTab === 'register'">
+      <form>
+        <div class="form-group">
+          <div class="label">Full name</div>
+          <div class="form-control">
+            <input
+              type="text"
+              [(ngModel)]="fullName"
+              name="fullName"
+              maxlength="25"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="label">Email</div>
+          <div class="form-control">
+            <input
+              type="email"
+              [(ngModel)]="email"
+              name="email"
+              maxlength="50"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="label">Create Password</div>
+          <div class="form-control">
+            <input
+              type="password"
+              [(ngModel)]="password"
+              name="password"
+              maxlength="50"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="label">Confirm Password</div>
+          <div class="form-control">
+            <input
+              type="password"
+              [(ngModel)]="confirmPassword"
+              name="confirmPassword"
+              maxlength="50"
+            />
+          </div>
+        </div>
+        <div>
+          <button class="loginBtn" (click)="register()">Register</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="upload-container">
+  <div class="home">
+    <img src="assets/home-icon.png" alt="" (click)="goToHome()" />
+  </div>
+  <img src="assets/upload.jpg" alt="" />
+  <div class="form-container">
+    <div class="form">
+      <div class="form-group">
+        <label for="imageName">Image name</label>
+        <input type="text" name="imageName" />
+      </div>
+      <div class="form-group photo-container">
+        <div class="text" *ngIf="picUrl.length === 0">Add a photo</div>
+        <div class="hidden-input">
+          <input type="file" name="image" autocomplete="off" (change)="onFileSelected($event)" />
+        </div>
+        <img class="previewImg" *ngIf="picUrl.length > 0" [src]="picUrl" alt="">
+      </div>
+      <div class="btn-container">
+        <button>Upload</button>
+      </div>
+    </div>
+  </div>
+</div>
