@@ -1,0 +1,55 @@
+<!-- <div>
+  <ul>
+    <li *ngFor="let num of nums">{{ num }}</li>
+  </ul>
+</div> -->
+
+<!-- <div>
+  <ul *ngFor="let num of nums">
+    <li>{{ num }}</li>
+  </ul>
+</div> -->
+
+<!-- <div>
+  <ul>
+    <li *ngFor="let num of nums; let i = index">{{ i }}</li>
+  </ul>
+</div> -->
+
+<!-- <div>
+  <ul>
+    <li *ngFor="let num of nums; let i = even">{{ i }}</li>
+  </ul>
+</div> -->
+
+<!-- <div>
+  <ul>
+    <li *ngFor="let num of nums">
+      <span *ngIf="num % 2 === 0">{{ num }}</span>
+    </li>
+  </ul>
+</div> -->
+
+<!-- <div>
+  <ul>
+    <ng-container *ngFor="let num of nums">
+      <li *ngIf="num % 2 === 0">{{ num }}</li>
+    </ng-container>
+  </ul>
+</div> -->
+
+<!-- <div>
+  <ul>
+    <li *ngFor="let num of nums" [ngClass]="{hide: num % 2 !== 0}">{{ num }}</li>
+  </ul>
+</div> -->
+
+<!-- <div>
+  <ul>
+    <li *ngFor="let num of nums; let f = first; let l = last;" [ngClass]="{first: f, last: l}">{{ num }}</li>
+  </ul>
+</div> -->
+
+<div>
+  <span *ngFor="let letter of firstName | strtoarr">{{ letter }}</span>
+</div>
