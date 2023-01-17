@@ -1,0 +1,13 @@
+<ngb-carousel
+  [interval]="3000"
+  [pauseOnHover]="false"
+  [showNavigationArrows]="false"
+  [showNavigationIndicators]="false"
+>
+  <ng-template ngbSlide *ngFor="let image of images">
+    <div class="carousel-wrapper">
+      <img src="assets/{{ image.name }}" [alt]="image.caption" />
+      <div class="caption">{{ image.caption }}</div>
+    </div>
+  </ng-template>
+</ngb-carousel>

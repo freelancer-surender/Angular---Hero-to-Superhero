@@ -1,0 +1,13 @@
+.carousel-wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  .caption {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+}
