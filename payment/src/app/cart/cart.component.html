@@ -1,0 +1,60 @@
+<div class="cart-container">
+  <div class="cart-th">
+    <div class="cart-td w50">Product</div>
+    <div class="cart-td w30">Quantity</div>
+    <div class="cart-td w20">Subtotal</div>
+  </div>
+  <div class="cart-row">
+    <div class="cart-td w50">
+      <div class="left">
+        <img src="assets/{{ firstImage }}" alt="" />
+      </div>
+      <div class="right">
+        <div class="product">{{ firstProduct }}</div>
+        <div class="price">Price: ${{ firstPrice }}</div>
+      </div>
+    </div>
+    <div class="cart-td w30">
+      <input type="number" [(ngModel)]="firstQuantity" (input)="calculate()" />
+    </div>
+    <div class="cart-td w20">
+      <div class="price">${{ firstTotal }}</div>
+    </div>
+  </div>
+  <div class="cart-row">
+    <div class="cart-td w50">
+      <div class="left">
+        <img src="assets/{{ secondImage }}" alt="" />
+      </div>
+      <div class="right">
+        <div class="product">{{ secondProduct }}</div>
+        <div class="price">Price: ${{ secondPrice }}</div>
+      </div>
+    </div>
+    <div class="cart-td w30">
+      <input type="number" [(ngModel)]="secondQuantity" (input)="calculate()" />
+    </div>
+    <div class="cart-td w20">
+      <div class="price">${{ secondTotal }}</div>
+    </div>
+  </div>
+  <div class="total-container">
+    <div class="total">
+      <div class="item">
+        <div class="left">Subtotal</div>
+        <div class="right">${{ subTotal }}</div>
+      </div>
+      <div class="item">
+        <div class="left">Shipping</div>
+        <div class="right">${{ shipping }}</div>
+      </div>
+      <div class="item">
+        <div class="left">Total</div>
+        <div class="right">${{ total }}</div>
+      </div>
+      <div class="payment-btn" (click)="goToPayment()">
+        Proceed to payment
+      </div>
+    </div>
+  </div>
+</div>

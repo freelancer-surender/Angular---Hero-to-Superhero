@@ -1,0 +1,20 @@
+.confirmation {
+  width: 80%;
+  margin: 100px auto;
+  border-radius: 5px;
+  background-color: #dff6dd;
+  padding: 20px;
+  text-align: center;
+  .status {
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  .id {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .info {
+    font-size: 18px;
+  }
+}
