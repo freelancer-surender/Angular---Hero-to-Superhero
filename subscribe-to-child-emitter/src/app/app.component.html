@@ -1,0 +1,5 @@
+<app-header (statusEmitter)="changeStatus()"></app-header>
+
+<app-top-menu [status]="status" [runStatus]="runStatus"></app-top-menu>
+
+<router-outlet (activate)="subscribeToChildEmitter($event)"></router-outlet>

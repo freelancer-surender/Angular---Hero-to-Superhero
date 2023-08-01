@@ -1,0 +1,37 @@
+.header {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 26px;
+  font-weight: bold;
+  background-color: #035ec7;
+  color: #fff;
+  padding: 0px 90px;
+  .nav {
+    display: flex;
+    align-items: center;
+    .nav-item {
+      margin: 0px 40px;
+      margin-right: 0px;
+      font-size: 20px;
+      cursor: pointer;
+      &:hover {
+        color: #8fc3ff;
+      }
+      &.special {
+        width: 96px;
+        text-align: center;
+        background-color: #fff;
+        color: #035ec7;
+        border-radius: 5px;
+        padding: 4px 15px;
+        box-shadow: 5px 5px 5px #0350a9;
+        &:active {
+          box-shadow: 5px 5px 5px #035ec7;
+        }
+      }
+    }
+  }
+}

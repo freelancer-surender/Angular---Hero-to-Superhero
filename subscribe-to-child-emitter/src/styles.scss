@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@100;300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ysabeau SC', sans-serif;
+}
+
+body {
+  background-color: #dfeefe;
+}
+
+button {
+  margin-top: 40px;
+  padding: 7px 20px;
+  border-radius: 5px;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+  background-color: #035ec7;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px #a2caf7;
+  &:active {
+    box-shadow: 5px 5px 5px #dfeefe;
+  }
+}

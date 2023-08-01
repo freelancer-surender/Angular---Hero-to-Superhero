@@ -1,0 +1,8 @@
+<div class="top-menu">
+  <div class="status" [ngClass]="runStatus === 'Stopped' ? 'red' : 'green'">
+    {{ runStatus }}
+  </div>
+  <div class="status" [ngClass]="status === 'Offline' ? 'red' : 'green'">
+    {{ status }}
+  </div>
+</div>

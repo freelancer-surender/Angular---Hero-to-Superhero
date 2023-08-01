@@ -1,0 +1,26 @@
+.top-menu {
+  width: 100%;
+  padding: 20px 90px;
+  background-color: #b8d9ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status {
+  font-weight: bold;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.red {
+  background-color: red;
+  color: white;
+}
+
+.green {
+  background-color: green;
+  color: white;
+}
