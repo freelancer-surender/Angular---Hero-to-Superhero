@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+body {
+    background-color: #eaddf5;
+    color: #171d1c;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+button {
+    width: 200px;
+    margin: 20px;
+    padding: 15px 30px;    
+    font-weight: bold;
+    cursor: pointer;
+    border: 0px;
+    outline: none;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px black;
+    &:active {
+        box-shadow: none;
+    }
+}
+
+.container {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

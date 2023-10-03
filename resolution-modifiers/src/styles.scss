@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5EFED;
+}
+
+button {
+    width: 250px;
+    height: 75px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    background-color: #2292A4;
+    color: #000;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    &:active {
+        box-shadow: none;
+        color: #fff;
+    }
+}
