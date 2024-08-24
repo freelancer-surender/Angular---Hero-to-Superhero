@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+body {
+    background-color: #5db7de;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+button {
+    width: 300px;
+    height: 100px;
+    cursor: pointer;
+    background-color: #f1e9db;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+    &:active {
+        box-shadow: none;
+    }
+}
